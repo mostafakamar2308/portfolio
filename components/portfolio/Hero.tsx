@@ -1,6 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowDown, FileText } from "lucide-react";
+import {
+  ArrowDown,
+  Code,
+  Equal,
+  FileText,
+  Heart,
+  Plus,
+  Stethoscope,
+} from "lucide-react";
 import HeartbeatLine from "./HeartbeatLine";
 
 const Hero = () => {
@@ -14,21 +22,16 @@ const Hero = () => {
           transition={{ duration: 0.7 }}
         >
           {/* Small stethoscope icon */}
-          <div className="flex justify-center mb-6">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="hsl(var(--primary))"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M4.8 2.3A.3.3 0 105.1 2H5a2 2 0 00-2 2v5a6 6 0 0012 0V4a2 2 0 00-2-2h-.1a.3.3 0 10.3.3" />
-              <path d="M8 15v1a6 6 0 006 6 6 6 0 006-6v-4" />
-              <circle cx="20" cy="10" r="2" />
-            </svg>
+          <div className="flex justify-center gap-2 mb-6">
+            <Stethoscope className="text-primary" strokeWidth={3} size={48} />
+            <Plus className="text-primary" strokeWidth={3} size={48} />
+            <Code className="text-primary" strokeWidth={3} size={48} />
+            <Equal className="text-primary" strokeWidth={3} size={48} />
+            <Heart
+              className="text-transparent animate-bounce"
+              fill={"red"}
+              size={48}
+            />
           </div>
 
           <h1 className="text-5xl md:text-7xl font-extrabold text-foreground tracking-tight mb-4">

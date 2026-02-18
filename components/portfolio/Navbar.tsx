@@ -9,7 +9,7 @@ const navLinks = [
   { label: "Projects", href: "/#projects" },
   { label: "Services", href: "/#services" },
   { label: "Skills", href: "/#skills" },
-  { label: "Blog", href: "/blog" },
+  // { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -17,9 +17,9 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [dark, setDark] = useState(() => {
     if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") === "dark";
+      return localStorage.getItem("theme") === "light";
     }
-    return false;
+    return true;
   });
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -47,7 +47,7 @@ const Navbar = () => {
           href="/"
           className="text-xl font-bold text-primary tracking-tight"
         >
-          {"<MK/>"}
+          {"<MK />"}
         </Link>
 
         {/* Desktop nav */}

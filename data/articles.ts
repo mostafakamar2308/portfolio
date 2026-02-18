@@ -25,7 +25,7 @@ export const articles: Article[] = [
     en: {
       title: "Building a Real-Time Chat System with WebSockets",
       excerpt:
-        "A deep dive into implementing a scalable real-time chat system using WebSockets, Node.js, and React — lessons learned from production.",
+        "A deep dive into implementing a scalable real-time chat system using WebSockets, Node.js, and React , lessons learned from production.",
       content: `
 ## Introduction
 
@@ -172,13 +172,13 @@ Key takeaways:
 
 ## Conclusion
 
-Building real-time systems is challenging but rewarding. The key is to plan for failure — connections will drop, servers will restart, and clients will misbehave. Design for resilience from day one.
+Building real-time systems is challenging but rewarding. The key is to plan for failure , connections will drop, servers will restart, and clients will misbehave. Design for resilience from day one.
 `,
     },
     ar: {
       title: "بناء نظام محادثة فوري باستخدام WebSockets",
       excerpt:
-        "نظرة معمقة على تنفيذ نظام محادثة فوري قابل للتوسع باستخدام WebSockets و Node.js و React — دروس مستفادة من بيئة الإنتاج.",
+        "نظرة معمقة على تنفيذ نظام محادثة فوري قابل للتوسع باستخدام WebSockets و Node.js و React , دروس مستفادة من بيئة الإنتاج.",
       content: `
 ## المقدمة
 
@@ -253,7 +253,7 @@ server.listen(3001);
 
 ## الخلاصة
 
-بناء الأنظمة الفورية تحدٍ مجزي. المفتاح هو التخطيط للفشل — الاتصالات ستنقطع، والخوادم ستعاد تشغيلها. صمم من أجل المرونة منذ اليوم الأول.
+بناء الأنظمة الفورية تحدٍ مجزي. المفتاح هو التخطيط للفشل , الاتصالات ستنقطع، والخوادم ستعاد تشغيلها. صمم من أجل المرونة منذ اليوم الأول.
 `,
     },
   },
@@ -420,7 +420,7 @@ Points and leaderboards increased student engagement by 35%:
 
 ## Conclusion
 
-The key architectural decisions — Prisma for type-safe database access, Next.js for full-stack capabilities, and a modular exam engine — made it possible to ship a production-quality LMS in under 3 months.
+The key architectural decisions , Prisma for type-safe database access, Next.js for full-stack capabilities, and a modular exam engine , made it possible to ship a production-quality LMS in under 3 months.
 `,
     },
     ar: {
@@ -496,7 +496,7 @@ function gradeExam(answers: Record<string, string>, questions: Question[]) {
 
 ## الخلاصة
 
-القرارات المعمارية الأساسية — Prisma للوصول الآمن لقاعدة البيانات، و Next.js للقدرات الكاملة — جعلت من الممكن إطلاق نظام LMS بجودة إنتاجية في أقل من 3 أشهر.
+القرارات المعمارية الأساسية , Prisma للوصول الآمن لقاعدة البيانات، و Next.js للقدرات الكاملة , جعلت من الممكن إطلاق نظام LMS بجودة إنتاجية في أقل من 3 أشهر.
 `,
     },
   },
@@ -508,11 +508,11 @@ function gradeExam(answers: Record<string, string>, questions: Question[]) {
     en: {
       title: "React Performance Optimization: Patterns I Use in Production",
       excerpt:
-        "Practical patterns for optimizing React applications — from memo strategies to virtualization and bundle splitting.",
+        "Practical patterns for optimizing React applications , from memo strategies to virtualization and bundle splitting.",
       content: `
 ## Introduction
 
-Performance isn't an afterthought — it's a feature. Here are the patterns I consistently apply to keep React applications fast and responsive.
+Performance isn't an afterthought , it's a feature. Here are the patterns I consistently apply to keep React applications fast and responsive.
 
 ## Table of Contents
 
@@ -647,11 +647,11 @@ Focus on measuring first, optimizing second. Use React DevTools Profiler and Lig
     ar: {
       title: "تحسين أداء React: أنماط أستخدمها في الإنتاج",
       excerpt:
-        "أنماط عملية لتحسين تطبيقات React — من استراتيجيات الحفظ إلى التقسيم الافتراضي وتقسيم الحزم.",
+        "أنماط عملية لتحسين تطبيقات React , من استراتيجيات الحفظ إلى التقسيم الافتراضي وتقسيم الحزم.",
       content: `
 ## المقدمة
 
-الأداء ليس فكرة لاحقة — إنه ميزة. إليك الأنماط التي أطبقها باستمرار للحفاظ على تطبيقات React سريعة ومتجاوبة.
+الأداء ليس فكرة لاحقة , إنه ميزة. إليك الأنماط التي أطبقها باستمرار للحفاظ على تطبيقات React سريعة ومتجاوبة.
 
 ## جدول المحتويات
 

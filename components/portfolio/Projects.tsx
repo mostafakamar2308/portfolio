@@ -1,38 +1,36 @@
 "use client";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 const projects = [
   {
     title: "AI Virtual Patient Simulator",
     description:
-      "A complete full‑stack application where medical students practice patient interviews. Frontend: React/Three.js with 3D character animation and voice UI. Backend: Node.js API, WebSocket server for real‑time dialogue, PostgreSQL database for patient cases and student responses. Integrated Gemini AI and Google Text‑to‑Speech. Piloted with 250+ students.",
+      "A complete full-stack application where medical students practice clinical situations. Integrated Gemini AI and Google Text-to-Speech for creation of voice based simulation to enhance realism. Integrated mutliple steps in each scenario from history, examination to investigation and diagnosis. Implemented of the feedback system for students.  Piloted with 250+ students.",
+    tech: ["React", "Node.js", "WebSockets", "PostgreSQL", "Tailwind"],
+    github: "https://github.com/mostafakamar2308/med-simulate",
+  },
+  {
+    title: "El-Ameed LMS",
+    description:
+      "End-to-end learning management system supporting 250+ active students. Built with Next.js frontend, Prisma ORM, and PostgreSQL. Features: secure video hosting, exam creation and auto-grading, gamified leaderboards, WhatsApp notifications via baileys library, and role-based access for students, instructors, and admins.",
+    tech: ["Next.js", "Prisma", "PostgreSQL", "Zustand", "Tailwind"],
+    github: "https://github.com/mostafakamar2308/lms",
+  },
+  {
+    title: "LiteSpace",
+    description:
+      "Cambly/Preply like Platform for learning English via 1 on 1 video calls with tutors. Implementing Real time Video Calls and Chats, Dynamic Booking systems End to End. Created Admin Dashboards for Analytics and Fine Tracking of the sessions to enhance business metrics",
     tech: [
       "React",
       "Node.js",
       "WebSockets",
+      "Knex",
+      "Tailwind Css",
       "PostgreSQL",
-      "Three.js",
-      "Tailwind",
     ],
-    demo: "#",
-    github: "#",
-  },
-  {
-    title: "El‑Ameed LMS",
-    description:
-      "End‑to‑end learning management system supporting 250+ active students. Built with Next.js frontend, Prisma ORM, and PostgreSQL. Features: secure video hosting, exam creation and auto‑grading, gamified leaderboards, WhatsApp notifications via webhooks, and role‑based access for students, instructors, and admins.",
-    tech: ["Next.js", "Prisma", "PostgreSQL", "Zustand", "Tailwind"],
-    demo: "#",
-    github: "#",
-  },
-  {
-    title: "Tutor Chat & Booking",
-    description:
-      "Real‑time communication and scheduling system for a 1‑on‑1 tutoring platform. Designed and implemented the full stack: WebSocket server for instant messaging, Node.js REST APIs for booking management, database schema for conversations and user availability, and responsive React UI. Mobile redesign increased bookings by 40%.",
-    tech: ["React", "Node.js", "WebSockets", "Knex", "PostgreSQL"],
-    github: "#",
+    github: "https://github.com/mostafakamar2308/lms",
   },
 ];
 
@@ -101,23 +99,13 @@ const Projects = () => {
               </div>
 
               {/* Links */}
-              <div className="flex gap-4 mt-auto">
-                {p.demo && (
-                  <a
-                    href={p.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
-                  >
-                    Live Demo <ExternalLink size={14} />
-                  </a>
-                )}
+              <div className="flex gap-4 items-center justify-center mt-auto">
                 {p.github && (
                   <a
                     href={p.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                    className="inline-flex items-center bg-secondary px-4 py-2 rounded-lg gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
                   >
                     GitHub <Github size={14} />
                   </a>

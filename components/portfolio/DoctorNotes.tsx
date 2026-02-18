@@ -4,13 +4,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { StickyNote, X } from "lucide-react";
 
 const notes = [
-  '"Clean code is like good hygiene — essential for long‑term health."',
-  '"I diagnose bugs the way I\'d diagnose a patient — systematically."',
+  '"Clean code is like good hygiene , essential for long‑term health."',
+  '"I diagnose bugs the way I\'d diagnose a patient , systematically."',
   '"250+ students trained on my AI patient simulator 🩺"',
-  '"From database to UI — I build the full stack 🔧"',
+  '"From database to UI , I build the full stack 🔧"',
   '"Day shift: saving patients. Night shift: shipping features."',
   '"Prescription: React + Node.js + PostgreSQL + empathy."',
-  '"Available for freelance — let\'s build something great 🚀"',
+  '"Available for freelance , let\'s build something great 🚀"',
 ];
 
 const DoctorNotes = () => {

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
 
 const About = () => {
@@ -8,7 +9,7 @@ const About = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="py-24 px-6 border-t border-b border-accent">
       <div className="max-w-5xl mx-auto" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -18,8 +19,13 @@ const About = () => {
         >
           {/* Avatar placeholder */}
           <div className="shrink-0">
-            <div className="w-40 h-40 rounded-full bg-secondary flex items-center justify-center border-4 border-primary/20">
-              <span className="text-4xl font-bold text-primary">MK</span>
+            <div className="w-60 h-60 relative overflow-hidden rounded-full bg-secondary flex items-center justify-center border-4 border-primary/20">
+              <Image
+                src="/me.jpg"
+                alt="MK"
+                fill
+                className="object-cover object-right"
+              />
             </div>
           </div>
 
@@ -29,7 +35,7 @@ const About = () => {
             </h2>
             <div className="w-12 h-1 bg-primary rounded-full mb-6" />
             <p className="text-muted-foreground leading-relaxed text-base">
-              I&apos;m a full‑stack developer with a unique perspective—I&apos;m
+              I&apos;m a full‑stack developer with a unique perspective,I&apos;m
               also a medical student. This combination drives my passion for
               creating tools that make learning and healing more accessible.
               Over the past 1.5 years, I&apos;ve built complete web applications

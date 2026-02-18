@@ -39,7 +39,7 @@ const services = [
     icon: Rocket,
     title: "MVP Development",
     description:
-      "From idea to deployed product in weeks — full‑stack, production‑ready.",
+      "From idea to deployed product in weeks , full‑stack, production‑ready.",
   },
   {
     icon: Plug,
@@ -66,7 +66,7 @@ const Services = () => {
             What I Can Build For You
           </h2>
           <p className="text-sm text-muted-foreground">
-            End‑to‑end solutions — from database to polished UI
+            End‑to‑end solutions , from database to polished UI
           </p>
           <div className="w-12 h-1 bg-primary rounded-full mx-auto mt-2" />
         </motion.div>
